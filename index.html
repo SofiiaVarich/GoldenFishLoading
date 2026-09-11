@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#081c2b" />
+    <title>Golden Fish Loading</title>
+    <link rel="stylesheet" href="src/styles.css" />
+    <script type="module" src="src/app.js"></script>
+  </head>
+  <body>
+    <main class="loading-screen" aria-labelledby="loading-title">
+      <div class="ambient-glow" aria-hidden="true"></div>
+
+      <section class="loader-card">
+        <div class="brand-mark" aria-hidden="true">✦</div>
+        <p class="eyebrow">Konnektoren</p>
+        <h1 id="loading-title">Finding your next adventure<span class="ellipsis" aria-hidden="true">...</span></h1>
+
+        <div class="fish-stage" aria-label="Animated golden fish loading illustration">
+          <div class="water-ring water-ring--one" aria-hidden="true"></div>
+          <div class="water-ring water-ring--two" aria-hidden="true"></div>
+          <img class="fish" id="fish" src="public/assets/fish/fish_loading_frame_01.png" alt="" width="192" height="171" />
+          <span class="bubble bubble--one" aria-hidden="true"></span>
+          <span class="bubble bubble--two" aria-hidden="true"></span>
+          <span class="bubble bubble--three" aria-hidden="true"></span>
+        </div>
+
+        <div class="progress" role="progressbar" aria-label="Loading animation" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+          <span class="progress__bar" id="progress-bar"></span>
+        </div>
+        <p class="status" id="status" role="status">Loading the ocean...</p>
+
+        <div class="controls" aria-label="Animation controls">
+          <button class="control-button" id="play-toggle" type="button" aria-pressed="true">Pause animation</button>
+          <label class="speed-control" for="speed">
+            <span>Speed</span>
+            <input id="speed" type="range" min="6" max="24" value="12" step="1" />
+          </label>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
