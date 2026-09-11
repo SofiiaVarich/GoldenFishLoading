@@ -1,5 +1,5 @@
 const frameCount = 48;
-const framePath = (frame) => `public/assets/konnektoren_loading_frames_equal/loading_frame_${String(frame).padStart(2, "0")}.png`;
+const framePath = (frame) => `public/assets/konnektoren_loading_frames_square_normalized/loading_frame_${String(frame).padStart(2, "0")}.png`;
 
 const fish = document.querySelector("#fish");
 const progressBar = document.querySelector("#progress-bar");
