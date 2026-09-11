@@ -8,7 +8,7 @@ A lightweight, dependency-free loading screen built around the 48-frame golden f
 .
 ├── index.html                  # Page structure and accessible controls
 ├── public/
-│   └── assets/fish/             # Animation frames (01–48)
+│   └── assets/konnektoren_loading_frames_equal/ # Animation frames (01–48)
 └── src/
     ├── app.js                   # Frame preloading, playback, and controls
     └── styles.css               # Layout, ocean background, and ambient motion
@@ -24,4 +24,4 @@ python3 -m http.server 8080
 
 Then open <http://localhost:8080>.
 
-The fish starts automatically, can be paused or resumed, and its frame rate can be adjusted with the speed slider. It also falls back to a still frame when the user has enabled reduced motion.
+The fish starts automatically using the equal-sized `konnektoren_loading_frames_equal` assets, can be paused or resumed, and its frame rate can be adjusted with the speed slider. It also falls back to a still frame when the user has enabled reduced motion.
